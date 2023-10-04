@@ -31,6 +31,7 @@ ul{
 .btn-primary{
     @apply mt-4 h-[34px] text-center border-solid border-[1px] border-green-normal py-0 px-4 bg-white min-w-[108px] font-semibold tracking-[.03em] inline-flex items-center text-white bg-transparent transition ease-in-out duration-300 hover:bg-green-normal;
 }
+
 .btn-secondary{
     @apply mt-4 h-[34px] text-center border-solid border-[1px] border-pink-normal py-0 px-4 bg-transparent min-w-[108px] font-semibold tracking-[.03em] inline-flex items-center text-pink-normal transition ease-in-out duration-300 hover:bg-pink-normal hover:text-white;
 }
@@ -50,4 +51,41 @@ ul{
 }
 .banner-title{
     @apply font-right text-4xl md:text-5xl font-normal tracking-[.09em] leading-[1.2] max-w-[600px] mb-10 uppercase lg:text-[56px] text-center md:text-start;
+}
+.banner-content .lead-text{
+    @apply text-center md:text-start;
+}
+.banner-btn{
+    @apply min-w-[140px] h-[45px] py-3 px-4 text-base font-semibold uppercase border-2 border-solid border-green-normal mt-8 flex items-center hover:bg-green-normal hover:text-white transition ease-in-out duration-300;
+}
+
+.navbar{
+    @apply fixed left-0 top-0 w-full min-w-[78px] bg-violet-dark-hover z-40; 
+}
+.navbar-brand{
+    @apply text-white uppercase whitespace-nowrap font-bold text-[32px];
+}
+.nav-item{
+    @apply py-[10px] px-0 border-b-[1px] border-solid border-black/10 lg:ms-[6px];
+}
+.nav-link{
+    @apply uppercase font-semibold tracking-[2px] transition duration-300 ease-in-out text-violet-dark-active hover:text-pink-normal lg:py-[1px] lg:px-[10px] lg:text-white xl:px-4;
+}
+#navbar-hide-btn{
+    @apply absolute top-5 right-5 transition duration-300 ease-in-out hover:scale-125;
+}
+.nav-content{
+    @apply lg:flex lg:items-center lg:justify-between;
+}
+.navbar-nav{
+    @apply lg:flex
+}
+.connect-link{
+    @apply py-[6px] px-2 flex items-center justify-center transition ease-in-out duration-300 invert hover:opacity-90 lg:text-white;
+}
+.connect-link img{
+    @apply lg:invert
+}
+.connect-list{
+    @apply flex justify-center items-center flex-wrap mt-6 lg:mt-0 lg:text-white lg:ms-10 lg:flex-nowrap xl:ms-[88px];
 }
