@@ -608,6 +608,10 @@ video {
   margin-top: 0.5rem;
 }
 
+.mt-\[60px\]{
+  margin-top: 60px;
+}
+
 .flex{
   display: flex;
 }
@@ -657,12 +661,20 @@ video {
   align-items: center;
 }
 
+.justify-center{
+  justify-content: center;
+}
+
 .justify-between{
   justify-content: space-between;
 }
 
 .gap-6{
   gap: 1.5rem;
+}
+
+.overflow-hidden{
+  overflow: hidden;
 }
 
 .bg-violet-dark-active{
@@ -673,6 +685,11 @@ video {
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-violet-darker{
+  --tw-bg-opacity: 1;
+  background-color: rgb(5 4 21 / var(--tw-bg-opacity));
 }
 
 .px-5{
@@ -1282,19 +1299,163 @@ ul{
   background-color: rgb(0 159 157 / var(--tw-bg-opacity));
 }
 
+.sc-title .line::before{
+  position: absolute;
+  right: -5px;
+  border-left-width: 6px;
+  border-bottom-width: 3.5px;
+  border-top-width: 3.5px;
+  border-style: solid;
+  --tw-border-opacity: 1;
+  border-left-color: rgb(0 159 157 / var(--tw-border-opacity));
+  border-bottom-color: transparent;
+  border-top-color: transparent;
+  --tw-content: '';
+  content: var(--tw-content);
+}
+
 .sc-title .line::after{
   position: absolute;
-  left: 5px;
+  left: -5px;
   border-right-width: 6px;
   border-bottom-width: 3.5px;
   border-top-width: 3.5px;
   border-style: solid;
   --tw-border-opacity: 1;
-  border-color: rgb(0 159 157 / var(--tw-border-opacity));
+  border-right-color: rgb(0 159 157 / var(--tw-border-opacity));
   border-bottom-color: transparent;
   border-top-color: transparent;
   --tw-content: '';
   content: var(--tw-content);
+}
+
+.sc-popular{
+  --tw-bg-opacity: 1;
+  background-color: rgb(7 5 27 / var(--tw-bg-opacity));
+}
+
+.game-card{
+  display: flex;
+  flex-direction: column;
+}
+
+.game-card .game-card-top{
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.27) 92.08%);
+  position: relative;
+  height: 280px;
+  overflow: hidden;
+}
+
+.game-card .game-card-top::after{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+  --tw-gradient-from: rgb(0 0 0 / 0) var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(0 0 0 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: rgb(0 0 0 / 1) var(--tw-gradient-to-position);
+  --tw-content: '';
+  content: var(--tw-content);
+}
+
+.game-card .star-rating{
+  display: flex;
+}
+
+.game-card .star-rating img{
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.game-card .ratings-count{
+  position: absolute;
+  left: 18px;
+  bottom: 10px;
+  z-index: 10;
+  display: flex;
+  border-radius: 1rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.game-card .game-card-bottom{
+  flex: 1 1 0%;
+  --tw-bg-opacity: 1;
+  background-color: rgb(16 14 43 / var(--tw-bg-opacity));
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.game-card .game-card-title{
+  margin-bottom: 10px;
+  font-family: Poppins, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: .06em;
+}
+
+.game-card .details-group{
+  padding-top: 0.75rem;
+  font-size: 14px;
+  color: rgb(255 255 255 / 0.6);
+}
+
+.slider-item{
+  height: 280px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+@media (min-width: 1200px){
+  .slider-item{
+    height: 400px;
+  }
+}
+
+.slider-item img{
+  border-width: 6px;
+  border-style: solid;
+  --tw-border-opacity: 1;
+  border-color: rgb(185 25 142 / var(--tw-border-opacity));
+}
+
+.slick-list{
+  padding-top: 30px!important;
+  padding-bottom: 30px!important;
+}
+
+@media screen and (min-width: 992px) {
+  .slick-list{
+    padding-top: 110px!important;
+    padding-bottom: 110px!important;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .slick-list{
+    padding-top: 140px!important;
+    padding-bottom: 140px!important;
+  }
+}
+
+.slick-dots li{
+  height: 10px;
+  width: 60px;
 }
 
 @media (min-width: 576px){

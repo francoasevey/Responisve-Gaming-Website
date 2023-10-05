@@ -101,14 +101,17 @@ ul{
 .sc-title{
     @apply py-3 px-0 text-center font-extrabold text-[32px] tracking-[.1em] text-white mb-10 font-poppins;
 }
+
 .sc-title h3{
     @apply uppercase relative;
 }
+
 .sc-title h3 span{
     @apply text-pink-normal;
 }
+
 .sc-title .line{
-    @apply mt-4 h-[6px] w-[160px] mx-auto bg-green-normal relative after:content-[''] after:absolute after:left-[5px] after:border-r-[6px] after:border-r-green-normal after:border-b-[3.5px] after:border-b-transparent after:border-t-[3.5px] after:border-t-transparent after:border-solid before:content-[''] before:absolute before:right-[-5px] before:border-l-[6px] before: border-l-green-normal before:border-b-[33.5px] before:border-b-transparent before:border-t-[3.5px] before:border-t-transparent before:border-solid;    
+    @apply mt-4 h-[6px] w-[160px] mx-auto bg-green-normal relative after:content-[''] after:absolute after:left-[-5px] after:border-r-[6px] after:border-r-green-normal after:border-b-[3.5px] after:border-b-transparent after:border-t-[3.5px] after:border-t-transparent after:border-solid before:content-[''] before:absolute before:right-[-5px] before:border-l-[6px] before:border-l-green-normal before:border-b-[3.5px] before:border-b-transparent before:border-t-[3.5px] before:border-t-transparent before:border-solid;
 }
 .sc-popular{
     @apply bg-violet-dark-active;
@@ -116,7 +119,73 @@ ul{
 .game-card{
     @apply flex flex-col;
 }
+
 .game-card .game-card-top{
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.27) 92.08%);
     @apply h-[280px] overflow-hidden relative after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-gradient-to-b after:from-black/0 after:to-black/100;
+}
+
+.game-card .star-rating{
+    @apply flex;
+}
+
+.game-card .star-rating img{
+    @apply py-0 px-[2px];
+}
+
+.game-card .ratings-count{
+    @apply absolute left-[18px] bottom-[10px] font-bold text-[14px] py-[2px] px-3 rounded-2xl bg-white z-10 flex;
+}
+
+.game-card .game-card-bottom{
+    @apply flex-1 bg-violet-light py-5 px-[18px];
+}
+
+.game-card .game-card-title{
+    @apply text-[18px] font-extrabold font-poppins tracking-[.06em] mb-[10px];
+}
+
+.game-card .details-group{
+    @apply pt-3 text-white/60 text-[14px];
+}
+.slider-item{
+    @apply h-[280px] xl:h-[400px] px-4 outline-none;
+}
+.slider-item img{
+    @apply border-solid border-[6px] border-pink-normal;
+}
+.slick-list{
+    padding-top: 30px!important;
+    padding-bottom: 30px!important;
+}
+@media screen and (min-width: 992px) {
+    .slick-list{
+    padding-top: 110px!important;
+    padding-bottom: 110px!important;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .slick-list{
+    padding-top: 140px!important;
+    padding-bottom: 140px!important;
+    }
+}
+.slick-dots li{
+    @apply h-[10px] w-[60px]
+}
+.slick-dots li button{
+    @apply before:w-full before:h-full before:border-solid before:border-2 before: border-pink-normal before:transition before:duration-300 before:ease-in-out;
+    color: unset;
+}
+.slick-dots li.slick-active{
+    @apply bg-pink-normal;
+}
+.slick-center{
+    @apply lg:scale-150;
+}
+.slick-prev{
+    @apply absolute left-4 z-10 scale-[1.4];
+}
+.slick-next{
+    @apply absolute right-4 z-10 scale-[1.4];
 }
