@@ -199,3 +199,20 @@ ul{
 .slick-next{
     @apply absolute right-4 z-10 scale-[1.4];
 }
+
+.sc-join{
+    @apply min-h-[640px];
+}
+
+.join-content{
+    @apply text-white mx-auto text-center max-w-[600px];
+}
+
+.join-title{
+    text-shadow: 0px 4px 4px 0x #00000040;
+    @apply text-[44px] tracking-[.09em] font-bold;
+}
+
+.join-title span{
+    @apply text-green-normal font-right;
+}
