@@ -12,6 +12,7 @@ $(document).ready(function() {
         }, 400);
     });
 
+    
     $('.game-slider').slick({
         className: "center",
         arrows: true,
@@ -45,5 +46,5 @@ $(document).ready(function() {
                 }
             }
         ]
-    })
+    });
 });
