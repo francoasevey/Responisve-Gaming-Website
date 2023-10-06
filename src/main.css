@@ -216,3 +216,19 @@ ul{
 .join-title span{
     @apply text-green-normal font-right;
 }
+
+.game-post-body{
+    @apply bg-violet-dark-hover text-white;
+}
+
+.game-post-title{
+    @apply font-bold text-[20px] tracking-wide text-white;
+}
+
+.game-post-body .para-text{
+    @apply text-white text-base leading-[1.4] mt-5 mb-6;
+}
+
+.game-post-body .btn-secondary{
+    @apply mt-0;
+}
