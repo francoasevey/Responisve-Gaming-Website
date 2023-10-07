@@ -1,2 +1,2 @@
-# Web-site-2
-Web site 2
+Responsive Gaming Web HTML ||CSS||JAVASCRIPT||TAILWINDCSS
+deploy: https://responisve-gaming-website.vercel.app/
